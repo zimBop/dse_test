@@ -4,6 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Models\Timeslot
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Reservation[] $reservations
+ * @property-read int|null $reservations_count
+ * @property-read \App\Models\Room $room
+ * @method static \Illuminate\Database\Eloquent\Builder|Timeslot newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Timeslot newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Timeslot query()
+ * @mixin \Eloquent
+ */
 class Timeslot extends Model
 {
     public const ID = 'id';
