@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Services\ReservationService;
+use App\Services\ReservationServiceInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +15,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(ReservationServiceInterface::class, static function ($app) {
+            return new ReservationService;
+        });
     }
 
     /**

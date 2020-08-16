@@ -123,6 +123,11 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    /**
+     * Max number of people can be registered in all rooms together during the timeslot
+     */
+    'max_total_reservations' => 25,
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
