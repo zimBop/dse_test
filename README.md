@@ -36,3 +36,8 @@
         ```
         php artisan migrate
         ```
+      
+    * Seed DB (for testing purposes)
+         ```
+        php artisan db:seed
+        ```
