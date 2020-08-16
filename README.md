@@ -1,7 +1,7 @@
 1. Docker setup
     * Go to the 'laradock' directory
     
-    * Before first launch copy .env.local into .env:
+    * Before first launch copy env-example.local into .env:
         ```
         cp env-example.local .env
         ```
